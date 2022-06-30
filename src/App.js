@@ -20,15 +20,12 @@ function App() {
   }, []);
 
   const toggleDarkMode = () => {
-    console.log('clicked!');
     darkMode ? 
       document.documentElement.classList.remove('dark') :
       document.documentElement.classList.add('dark');
 
     setDarkMode(prevDarkMode => !prevDarkMode);
   };
-
-  console.log('click effect ===', clickEffect);
 
   return (
     <div className="App container mx-auto py-12 px-6">
